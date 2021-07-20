@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>Login</h1>
+      <form
+        name="form"
+        id="form"
+        action="http://localhost:3000/users"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <ul>
+          <li>
+            <label for="name"> Name </label>
+            <input type="text" id="name" name="name" />
+          </li>
+          <li>
+            <label for="age"> Age </label>
+            <input type="number" id="age" name="age" />
+          </li>
+          <li>
+            <label for="email"> Email </label>
+            <input type="email" id="email" name="email" />
+          </li>
+          <li>
+            <label for="password"> Password </label>
+            <input type="password" id="password" name="password" />
+          </li>
+          <li>
+            <label for="avatar">profile pic</label>
+            <input type="file" id="avatar" name="avatar" />
+          </li>
+        </ul>
+
+        <button type="submit">submit</button>
+      </form>
+
+      <script>
+        // const form = document.forms.namedItem("form");
+
+        // const btn = document.querySelector("button");
+
+        // btn.onclick = async function (e) {
+        //   e.preventDefault();
+
+        //   // const formdata = new FormData(form);
+        //   // console.log(formdata);
+
+        //   const data = {
+        //     name: form.querySelector("#name").value,
+        //     age: form.querySelector("#age").value,
+        //     email: form.querySelector("#email").value,
+        //     password: form.querySelector("#password").value,
+        //     avatar: form.querySelector("#avatar").value,
+        //   };
+
+        //   console.log(JSON.stringify(data));
+        //   const response = await fetch("http://localhost:3000/users", {
+        //     method: "POST",
+        //     headers: {
+        //       "Content-Type": "application/json",
+        //     },
+        //     body: JSON.stringify(data),
+        //   });
+
+        //   const jsonResponse = await response.json();
+
+        //   console.log(jsonResponse);
+        // };
+      </script>
+    </main>
+  </body>
+</html>
